@@ -1,0 +1,48 @@
+/* Reset default margins and padding for a true full-screen experience */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to 100% of the viewport height */
+    width: 100vw; /* Set width to 100% of the viewport width */
+    overflow: hidden; /* Hide body scrollbars if only the iframe content should scroll */
+    background-color: black;
+}
+
+/* Style the iframe to cover the entire container (which is now the whole viewport) */
+.fullscreen {
+    display: block; /* Helps remove extra spacing issues */
+    width: 100vw;
+    height: 96vh;
+    border: none; /* Removes the default iframe border */
+    position: absolute; /* Position it absolutely relative to the body */
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 0;
+}
+
+.cover {
+    width: 100vw;
+    height: 96vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    background-image: url("https://i.postimg.cc/XNGZD333/GOTCHA.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 96vh;
+    background-attachment: fixed;
+}
+
+.title {
+    width: 100vw;
+    height: 7vh;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+    text-align: center;
+    margin: 0;
+}
