@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaos Cookie Clicker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Cookies: <span id="count">0</span></h1>
+    <p>Cookies Per Second: <span id="cps-display">0</span></p>
+
+    <!-- 1. Ability to click on your own -->
+    <img id="cookie" src="https://i.postimg.cc/9XSrXq5f/cookie.png" alt="Cookie" onclick="manualClick()">
+
+    <div class="shop">
+        <button class="upgrade auto" onclick="buyAutoClicker()">
+            Buy Luca Angelotti (+1 CPS)<br>Cost: <span id="auto-cost">15</span>
+        </button>
+
+        <button class="upgrade sabotage" onclick="buySabotage()">
+            Buy Natalie Walker (+5 Click Power, -2 CPS)<br>Cost: <span id="sabotage-cost">50</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
