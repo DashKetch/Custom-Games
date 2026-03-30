@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Color Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- New background container for the animated images -->
+    <div id="background-container" class="background-image-one"></div>
+
+    <!-- Wrapper for game content to sit above the background -->
+    <div class="game-content">
+        <h1>Guess the 
+            <br>
+            <span id="colorDisplay">RGB(255, 255, 255)</span>
+            <br>
+            Color Game
+        </h1>
+
+        <div id="stripe">
+            <button id="reset">New Colors</button>
+            <span id="message"></span>
+            <span id="score">Score: 0</span>
+        </div>
+        <div id="difficultyStripe">
+            <select name="selectDifficulty" id="selectDifficulty">
+              <option value="" selected disabled>--Select a Difficulty--</option>
+              <option value="easyMode" data-squares="2">Easy Mode (2 colors)</option>
+              <option value="mediumMode" data-squares="3">Medium Mode (3 colors)</option>
+              <option value="hardMode" data-squares="6">Hard Mode (6 colors)</option>
+            </select>
+        </div>
+
+        <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div> <!-- End game-content wrapper -->
+
+    <script src="script.js"></script> 
+</body>
+</html>
