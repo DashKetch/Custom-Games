@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Dash Clone</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <h1>Geometry Dash Clone</h1>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <div class="controls">
+        <button id="startGameBtn">Start Game</button>
+        <button id="toggleEditorBtn">Toggle Editor (Off)</button>
+        <select id="obstacleTypeSelect" style="display: none;">
+            <option value="spike">Spike (Deadly)</option>
+            <option value="block">Block (Solid)</option>
+            <option value="delete">Delete Tool</option>
+        </select>
+        <button id="exportLevelBtn">Export Level</button>
+        <button id="importLevelBtn">Import Level</button>
+    </div>
+    <textarea id="levelDataInput" placeholder="Paste level JSON here..." style="display: none;"></textarea>
+
+    <script src="script.js"></script> 
+</body>
+</html>
